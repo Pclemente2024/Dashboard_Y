@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+    <title>Deteccion de PPE</title>
+</head>
+<body>
+    <header class="topbar">   
+    <nav class="menu">
+        <div class="logo">Yandri</div>
+        <a href="/">Inicio</a>
+        <a href="/perfil">Perfil</a>
+        <a href="/config">Configuración</a>
+    </nav>
+
+    <div class="user-info">
+        <img src="/static/avatar.png" alt="avatar">
+        <span class="user-name">{{ name or "Usuario" }}
+            <span class="user-role">Admin</span>
+        </span>
+    </div>
+</header>
+    <main class='grid-views_security'>
+        <!--<h1>Dashboard</h2>-->
+        <article class='item-principal item-control-frame'>
+            <div class='conte-view-frame_principal'></div>
+            <div class='conte-view-frame-deteccion'></div>
+        </article>
+        <aside class='item-principal'>
+            <div class='contents'></div>
+            <div class='contents'></div>
+            <div class='contents'></div>
+            <div class='contents'></div>
+        </aside>
+    </main>
+</body>
+</html>

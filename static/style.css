@@ -65,9 +65,12 @@ header{
     gap: 20px;
 }
 
+/*
 .item-principal, .item-control-frame{
-    /*border:  solid white;*/
+    border:  solid white;
 }
+*/
+
 aside{
     border:  solid white 0.1rem;
 }
@@ -84,3 +87,12 @@ aside{
     height: 100%;
 }
 
+.conte-view-frame_principal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.frame{
+    border: solid 0.1rem white;
+}
